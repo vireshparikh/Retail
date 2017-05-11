@@ -22,6 +22,6 @@ public class ProcessRequest extends HttpServlet {
 	public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		System.out.println("in Get" + request.getParameter("QueueId") + "status" + request.getParameter("stat"));
 		dao.updateQueueList(request.getParameter("QueueId"), request.getParameter("stat"));
-		response.sendRedirect("/RetailLite/ShowQueue.jsp");
+		response.sendRedirect("/Retail/ShowQueue.jsp");
 	}
 }
